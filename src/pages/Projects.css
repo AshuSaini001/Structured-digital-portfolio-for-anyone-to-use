@@ -1,0 +1,22 @@
+/* Projects.css */
+.projects {
+  padding: 50px;
+  background-color: #f4f4f9;
+}
+
+.projects h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.projects ul {
+  list-style-type: none;
+}
+
+.projects li {
+  margin-bottom: 20px;
+}
+
+.projects a {
+  color: #0070f3;
+}

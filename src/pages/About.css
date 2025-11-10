@@ -1,0 +1,17 @@
+/* About.css */
+.page-container{
+  padding: 40px 24px;
+  max-width:1100px;
+  margin:0 auto;
+}
+
+.page-title{ font-size:2rem; margin-bottom:18px; color:#102a43 }
+
+.about .more{ display:grid; grid-template-columns:1fr 1fr; gap:18px; margin-top:22px }
+.about .card{ background:linear-gradient(180deg,#fff,#fbfdff); padding:16px; border-radius:10px; box-shadow:0 6px 18px rgba(12,30,80,0.04) }
+.about .card h3{ margin-top:0 }
+.about .card ul{ margin:8px 0 0 18px }
+
+@media (max-width:760px){
+  .about .more{ grid-template-columns:1fr }
+}

@@ -1,0 +1,66 @@
+
+/* Use modern fonts similar to Agrim Jain's site */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Poppins:wght@600;700&display=swap');
+
+:root{
+  --bg: #0f1724; /* dark base (unused by default, kept for theme) */
+  --card: #ffffff;
+  --muted: #6b7280;
+  --accent: #06b6d4; /* cyan-ish */
+  --accent-2: #7c3aed; /* purple */
+  --accent-grad: linear-gradient(90deg, #7c3aed 0%, #06b6d4 100%);
+  --glass: rgba(255,255,255,0.04);
+  --radius: 12px;
+  --ease-default: cubic-bezier(.2,.9,.2,1);
+}
+
+/* Global Reset */
+*,*::before,*::after{ box-sizing:border-box; margin:0; padding:0 }
+
+html,body,#root{ height:100% }
+
+body{
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  color: #0b1520;
+  background: linear-gradient(180deg,#f4f7fb 0%, #eef6ff 100%);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  font-size:16px;
+  overflow-x:hidden;
+  transition: background 300ms var(--ease-default), color 220ms var(--ease-default);
+}
+
+/* Links and buttons */
+a{ color:inherit; text-decoration:none; transition: color 200ms var(--ease-default), transform 160ms ease }
+a:focus{ outline:2px solid rgba(11,87,208,0.18); outline-offset:3px; border-radius:6px }
+
+button,input,textarea{ font-family:inherit; font-size:inherit }
+
+/* Accessibility focus */
+*:focus{ outline: none }
+
+/* Headings */
+h1{ font-size:2.4rem }
+h2{ font-size:1.8rem }
+h3{ font-size:1.2rem }
+
+/* Containers */
+.container{ width:100%; max-width:1200px; margin:0 auto; padding:0 20px }
+
+.center{ text-align:center }
+
+/* Buttons */
+.btn{ display:inline-block }
+
+/* Smooth scroll */
+html{ scroll-behavior: smooth }
+
+/* Utility */
+.flex{ display:flex }
+
+@media (max-width:1024px){ h1{ font-size:2rem } h2{ font-size:1.6rem } }
+@media (max-width:768px){ h1{ font-size:1.6rem } h2{ font-size:1.2rem } }
+
+@media (prefers-reduced-motion: reduce){
+  *{ transition:none !important; animation:none !important }
+}

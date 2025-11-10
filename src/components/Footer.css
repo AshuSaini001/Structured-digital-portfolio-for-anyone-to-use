@@ -1,0 +1,25 @@
+/* Footer.css */
+.footer {
+  background: rgba(17,24,39,0.95);
+  color: white;
+  text-align: center;
+  padding: 14px 12px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -6px 24px rgba(2,6,23,0.15);
+  transition: transform 260ms ease, background 260ms ease;
+}
+
+.social-links a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+  transition: color 160ms ease, transform 160ms ease;
+}
+
+.social-links a:hover { color: #8bd3c7; transform: translateY(-3px) }
+
+@media (prefers-reduced-motion: reduce) {
+  .footer, .social-links a { transition: none !important }
+}

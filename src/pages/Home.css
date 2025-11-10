@@ -1,0 +1,48 @@
+/* Home page specific styles */
+.home-page{ padding-top:64px }
+
+.hero{ min-height:72vh; display:flex; align-items:center; background:linear-gradient(135deg,#f7fbff 0%, #eef6ff 100%); }
+.hero-inner{ max-width:1100px; margin:0 auto; padding:48px 20px; }
+.hero h1{ font-size:2.4rem; margin-bottom:8px; line-height:1.05 }
+.hero .accent{ background:var(--accent-grad); -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent }
+.hero p{ margin-bottom:18px; color:var(--muted) }
+.hero-ctas{ display:flex; gap:12px; margin-bottom:12px }
+.hero-social a{ margin-right:10px; color:var(--muted) }
+
+/* Slight polish for cards */
+.section .card-like{ background:var(--card); padding:16px; border-radius:var(--radius); box-shadow:0 12px 30px rgba(12,20,40,0.06) }
+
+
+/* Responsive tweaks */
+@media (max-width:760px){
+  .hero{ padding:36px 0 }
+  .hero-inner{ padding:28px 18px }
+  .hero h1{ font-size:1.6rem }
+}
+/* Home.css */
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+  background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Optional: Add smooth fade-in animation */
+.home {
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
